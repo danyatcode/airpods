@@ -9,6 +9,7 @@
     <title>Airpods</title>
 </head>
 <body>
+    <div class="menu-overlay"></div>
     <div class="container">
 
         <div class="header">
@@ -17,20 +18,28 @@
                     <div class="logo">
                         <img class="logo-image" src="assets/images/logo.png" alt="">
                     </div>
-                    <li>Store</li>
-                    <li>Mac</li>
-                    <li>iPhone</li>
-                    <li>iPad</li>
-                    <li>Watch</li>
-                    <li>AirPods</li>
-                    <li>TV & Home</li>
-                    <li>Only on Apple</li>
-                    <li>Accessories</li>
-                    <li>Support</li>
+                    <div class="nav-links">
+                        <li class="nav-link xs">Store</li>
+                        <li class="nav-link">Mac</li>
+                        <li class="nav-link">iPhone</li>
+                        <li class="nav-link">iPad</li>
+                        <li class="nav-link">Watch</li>
+                        <li class="nav-link">AirPods</li>
+                        <li class="nav-link">TV & Home</li>
+                        <li class="nav-link">Only on Apple</li>
+                        <li class="nav-link xs">Accessories</li>
+                        <li class="nav-link xs">Support</li>
+                    </div>
+
                     <div class="icons">
                         <img src="assets/images/header/magnifying-glass-solid.png" alt="">
                         <img src="assets/images/header/bag.png" alt="">    
                     </div>
+                    <button onclick="toggleMenu()" class="toggle-menu">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </button>
                 </ul>
             </nav>
         </div>
@@ -69,8 +78,8 @@
                     <img class="comfort-airpods" src="assets/images/soft/l2.png" alt="">
                 </div>
                 <div class="comfort-description">
-                    We have redesigned the ergonomics of comfort, resulting in a new category of in-ear headphones
-                     with an amazing seal for active noise cancellation. You won't just hear music; you'll also feel it.
+                    <p>We have redesigned the ergonomics of comfort, resulting in a new category of in-ear headphones
+                        with an amazing seal for active noise cancellation. You won't just hear music; you'll also feel it.</p>    
                 </div>
                 <div class="right-airpods">
                     <img class="comfort-airpods" src="assets/images/soft/r2.png" alt="">
@@ -90,7 +99,7 @@
 
     <div class="container">
 
-        <section class="comfort">
+        <section class="comfort comfort-soft">
             <div class="soft">
                 <div class="soft-left-airpods">
                     <img class="soft-airpods" src="assets/images/comfort/L.png" alt="">
@@ -152,10 +161,10 @@ Andwith vents helping equalize pressure, <br> you feel like there's nothing in y
                     <p>The Apple-deigned H1 chip employs 10 audio cores, creating incredbly low audio processing latency that enables real-time noise cancellation.</p>
                 </div>
             </div>
-            <div class="specification-image">
-                <hr class="hr" id="hr">
-                <img src="assets/images/Layer 4.png" alt="#">
-            </div>
+        </div>
+        <div class="specification-image">
+            <hr class="hr" id="hr">
+            <img src="assets/images/Layer 4.png" alt="#">
         </div>
     </section>
 
@@ -180,23 +189,23 @@ Andwith vents helping equalize pressure, <br> you feel like there's nothing in y
             <div class="charge-title">Use tirelessly</div>
     </section>
 
-    <div class="container specs">
+    <div class="container container-specs">
 
         <section class="battery-specs">
             <div class="specs">
                 <p class="">More then</p>
                 <p class="specs-title">24 hrs</p>
-                <p>of listening time with multiple additional charges in the case</p>
+                <p class="specs-suptitle">of listening time with multiple additional charges in the case</p>
             </div>
             <div class="specs">
                 <p class="">Upto</p>
                 <p class="specs-title">4.5hrs</p>
-                <p>of listening time on one charge</p>
+                <p class="specs-suptitle">of listening time on one charge</p>
             </div>
             <div class="specs">
                 <p class="">Around</p>
                 <p class="specs-title">1hrs</p>
-                <p>of listening time on only 5 mintues of charging</p> 
+                <p class="specs-suptitle">of listening time on only 5 mintues of charging</p> 
           </div>
         </section>
 
@@ -299,5 +308,7 @@ Andwith vents helping equalize pressure, <br> you feel like there's nothing in y
 
         </section>
     </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
